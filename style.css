@@ -1,0 +1,581 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400;500;600;700;800;900&family=Lato:ital,wght@0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:wght@300;400;500;600;700;800;900&family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root{
+    --gray: #534C64;
+}
+
+body{
+    max-width: 1440px;
+    margin: auto;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.color{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.btn-primary{
+    border-radius: 48px;
+    background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 20px 40px;
+    gap: 10px;
+    text-transform: uppercase;
+    margin-top: 40px;
+    border: 0;
+    margin-right: 24px;
+}
+#blue-btn{
+    background: #4EC5F7;
+}
+
+/* header sections styling */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.title{
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+.nav-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+.nav-title span{
+    color: #FF42A5;
+}
+ ul{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+ li{
+    color: #3C354F;
+    font-size: 1.15rem;
+    font-weight: 500;
+    list-style: none;
+    gap: 2rem;
+}
+.follow-us{
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    padding: 15px;
+}
+ .follow-us i{
+    color: red;
+}
+#tik-talk{
+    color: #000000;
+}
+
+/* banner section stylilng start */
+.banner-container{
+    background-image: url("images/Group 14.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+.banner-title{
+    justify-content: center;
+    align-items: center;
+    width: calc(( 100% - 100px ) /2 );
+}
+.banner-image{
+    justify-content: center;
+    align-items: center;
+    width: calc(( 100% - 100px ) /2 );
+    }
+.banner-image img{
+    width: 100%;
+}
+.banner-title>h2{
+    color: #0B0223;
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.banner-title> h1{
+    font-size: 6rem;
+    font-weight: 800;
+}
+.banner-title li{
+    color: var(--gray);
+    font-size: 1.25rem;
+    font-weight:500 ;
+}
+/* gammer section */
+.gamer{
+    display: flex;
+    gap: 5%;
+}
+.gamer-title{
+    text-align: right;
+    width: 40%;
+}
+.gamer-title h2{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.gamer-title p{
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--gray);
+}
+.gamer-title h6{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--gray);
+}
+.gamer-title span{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--gray);
+}
+.gamer-image{
+    width: 55%;
+}
+.gamer-image img{
+    width: 100%;
+}
+/* feature section */
+.features{
+    margin-top: 120px;
+}
+.features h3{
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
+.features-p{
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--gray);
+    text-align: center;
+}
+.features-contianer{
+    display: flex;
+    gap: 1.5rem;
+}
+.features-card{
+    align-items: center;
+    text-align: center;
+}
+.image-container{
+    position: relative;
+    display: inline-block;
+}
+.p-btn{
+    position: absolute;
+    top: 50%;
+    left: 50%; 
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.image-container:hover .p-btn{
+    opacity: 1;
+    cursor: pointer;
+}
+.p-btn i{
+    color: white;
+}
+
+/* add section  */
+.add-container{
+    display: flex;
+    justify-content: center;
+    gap: 15%;
+    margin-top: 120px;
+    margin-bottom: 0px;
+}
+#add-reverse{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0;
+}
+.add-title{
+    width: 35%;
+    text-align: right;
+    align-items: center; 
+    padding: 150px 0px;
+}
+.add-title h4{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.add-title p{
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--gray);
+}
+.add-image{
+    width: 50%;
+}
+
+.position{
+    position: relative;
+    bottom: 300px;
+    right: 140px;
+
+}
+#position-2{
+    left: 500px;
+}
+#title-2{
+    text-align: left;
+}
+
+/* career section */
+.career{
+    display: flex;
+    padding:0px 0px 0px 50px;
+    background-image: url('images/Group 14.png');
+    background: linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%);
+    color: white;
+    width: 100%;
+}
+.career-title{
+    width: 45%;
+}
+.career h3{
+    font-size: 3rem;
+    font-weight: 700;
+}
+.career P{
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+.white{
+    background-color: #FFF;
+    border-radius: 48px;
+    color:#FF42A5;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 20px 40px;
+    gap: 10px;
+    text-transform: uppercase;
+    margin-top: 40px;
+    border: 0;
+    margin-bottom: 70px;
+}
+.list-container{
+    display: flex;
+    gap: 70px;
+}
+.list-one{
+    margin-top: 32px;
+    text-align: start;
+}
+.list-one li{
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.list-two{
+    margin-top: 32px;
+    text-align: right;
+}
+.list-two li{
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.career-img{
+    width: 50%;
+    margin: 0;
+}
+.career-img img{
+    width: 100%;
+}
+
+/* grid-section */
+.grid-div {
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(5, 1fr) ;
+    gap: 25px;
+    margin-top: 120px;
+}
+.grid-div div {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+.grid-div div:hover{
+    border: 2px solid #F948B2;
+    border-radius: 48px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* footer section */
+footer{
+    background-color: #0B0223;
+    margin-top: 70px;
+    padding: 100px 0px;
+}
+.footer-title{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+#footer-heading{
+    color: #FFF;
+}
+.footer-list-one{
+    display: flex;
+    justify-content: center;
+}
+.footer-list-one li{
+    color: #FFF;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+}
+.footer-icon{
+    text-align: center;
+}
+.footer-icon i{
+    color: #FFF;
+    width: 50px;
+}
+.footer-list-two{
+    justify-content: center;
+}
+.footer-list-two li{
+    color:var(--gray);
+    font-size: 1rem;
+    font-weight: 500;
+}
+.footer-container p{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--gray);
+}
+
+/* Resoponsive for small device */
+
+@media screen and (max-width:576px) {
+    body{
+        padding: 0;
+    }
+    header,ul, .add-container, #add-reverse, .career {
+            flex-direction: column;
+        }
+    .banner-container, .features-contianer, .gamer {
+        flex-direction: column-reverse;
+    }
+    .two-btn{
+        display: flex;
+        gap: 10px;
+    }
+    .gamer{
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+    .banner-image, .gamer-image, .add-image, #add-2, .career-img , .grid-div{
+        width: 90%;
+    } 
+    .banner-title, .gamer-title, .add-title, #title-2, .career-title{
+        width: 90%;
+    }
+    .gamer-title, .add-title, #title-2{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .gamer-title button{
+        margin-left: 25%;
+    }
+    .banner-title{
+        padding: 40px;
+        align-items: center;
+        /* text-align: center; */
+    }
+    .btn-primary{
+        margin: 0;
+        display: flex;
+    }
+    .add-image img{
+        width:100%;
+    }
+    .position{
+        width:200px;
+        height:220px;
+        bottom: 100px;
+        right: 80px;
+    }
+    #position-2{
+        left: 230px;
+
+    }
+    .footer{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer-container{
+        padding: 10%;
+    }
+    .grid-div, .footer-list-one, .footer-icon{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+
+    }
+   .footer-icon{
+    margin-left: 70px;
+   }
+    .footer-list-two{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .add-image {
+     margin-left: 70px;
+     margin-right: 0;
+    }
+
+}
+
+@media screen and (min-width:576px) and (max-width:992px) {
+        body {
+                padding: 0;
+            }
+        
+            header,
+            ul,
+            .add-container,
+            #add-reverse,
+            .career {
+                flex-direction: column;
+            }
+        
+            .banner-container,
+            .features-contianer,
+            .gamer {
+                flex-direction: column-reverse;
+            }
+        
+            .two-btn {
+                display: flex;
+                gap: 10px;
+            }
+        
+            .gamer {
+                flex-direction: column-reverse;
+                align-items: center;
+            }
+        
+            .banner-image,
+            .gamer-image,
+            .add-image,
+            #add-2,
+            .career-img,
+            .grid-div {
+                width: 90%;
+            }
+            .add-image{
+                align-items: center;
+                justify-content: center;
+            }
+        
+            .banner-title,
+            .gamer-title,
+            .add-title,
+            #title-2,
+            .career-title {
+                width: 90%;
+            }
+        
+            .gamer-title,
+            .add-title,
+            #title-2 {
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+        
+            .gamer-title button {
+                margin-left: 35%;
+            }
+        
+            .banner-title {
+                padding: 40px;
+                align-items: center;
+                /* text-align: center; */
+            }
+            .add-image{
+                margin-left: 100px;
+            }
+            #add-reverse{
+                margin-right:200px;
+            }
+        
+            .btn-primary {
+                margin: 0;
+                display: flex;
+            }
+        
+            .add-image img {
+                width: 100%;
+            }
+        
+            .position {
+                width: 200px;
+                height: 220px;
+                bottom: 100px;
+                right: 80px;
+            }
+        
+            #position-2 {
+                
+                right: 320px;
+        
+            }
+        
+            .footer {
+                width: 100%;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+        
+            .footer-container {
+                padding: 10%;
+            }
+        
+            .grid-div,
+            .footer-list-one,
+            .footer-icon {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+        
+            }
+        
+            .footer-icon {
+                margin-left: 140px;
+
+            }
+        
+            .footer-list-two {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                padding-left:140px;
+            }
+        
+        }
+
