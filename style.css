@@ -103,7 +103,7 @@ header{
     font-weight: 600;
     text-transform: uppercase;
 }
-.banner-title> h1{
+.banner-title h1{
     font-size: 6rem;
     font-weight: 800;
 }
@@ -301,10 +301,12 @@ header{
 
 /* grid-section */
 .grid-div {
-    display: grid;
-    justify-content: space-evenly;
-    grid-template-columns: repeat(5, 1fr) ;
-    gap: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
     margin-top: 120px;
 }
 .grid-div div {
@@ -313,9 +315,9 @@ header{
     text-align: center;
 }
 .grid-div div:hover{
-    border: 2px solid #F948B2;
+    background-color:  #F948B2;
+    color: #FFF;
     border-radius: 48px;
-    padding: 10px;
     cursor: pointer;
 }
 
@@ -370,6 +372,8 @@ footer{
 
 @media screen and (max-width:576px) {
     body{
+        max-width: 576px;
+        margin: 0px;
         padding: 0;
     }
     header,ul, .add-container, #add-reverse, .career {
@@ -386,11 +390,23 @@ footer{
       flex-direction: column-reverse;
       align-items: center;
     }
-    .banner-image, .gamer-image, .add-image, #add-2, .career-img , .grid-div{
+    .banner-image, .gamer-image, .add-image, #add-2, .career-img , .grid-div, .features{
         width: 90%;
     } 
-    .banner-title, .gamer-title, .add-title, #title-2, .career-title{
+    .gamer-title, .add-title, #title-2, .career-title, .career, .banner-title{
         width: 90%;
+    }
+     #grid-section{
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+     }
+     #grid-section img{
+        width: 25%;
+     }
+    .career-title{
+        margin: 0;
+        padding: 20px;
     }
     .gamer-title, .add-title, #title-2{
         justify-content: center;
@@ -403,32 +419,50 @@ footer{
     .banner-title{
         padding: 40px;
         align-items: center;
-        /* text-align: center; */
     }
     .btn-primary{
         margin: 0;
         display: flex;
     }
-    .add-image img{
+    .add-image img, .features-card img{
         width:100%;
     }
+    .list-container{
+        width: 90%;
+        margin: 0;
+        padding: 0;
+        gap: 50px;
+    }
+    .list-one{
+        width: 40%;
+    }
+    .list-two{
+        width: 40%;
+        padding-right: 100px;
+        margin-right: 30px;
+    }
+    #add-2 , .add-image{
+        width: 60%;
+    }
     .position{
-        width:200px;
-        height:220px;
-        bottom: 100px;
-        right: 80px;
+        width: 40%;
+        bottom: 80px;
+        right: 50px;
     }
     #position-2{
-        left: 230px;
+        width: 40%;
+        left: 200px;
+        top: -50px;
 
     }
     .footer{
-        width: 100%;
+        width: 90%;
         justify-content: center;
         align-items: center;
     }
-    .footer-container{
-        padding: 10%;
+    .footer-container,.banner-container{
+        width: 100%;
+        /* padding: 10%; */
     }
     .grid-div, .footer-list-one, .footer-icon{
         display: grid;
@@ -436,6 +470,7 @@ footer{
         gap: 20px;
 
     }
+
    .footer-icon{
     margin-left: 70px;
    }
@@ -452,11 +487,10 @@ footer{
 
 @media screen and (min-width:576px) and (max-width:992px) {
         body {
-                padding: 0;
+                padding: 5%;
             }
         
             header,
-            ul,
             .add-container,
             #add-reverse,
             .career {
@@ -469,9 +503,12 @@ footer{
                 flex-direction: column-reverse;
             }
         
-            .two-btn {
+            .two-btn, ul,.footer-list-two{
                 display: flex;
-                gap: 10px;
+                justify-content: space-evenly;
+            }
+            .two-btn{
+                margin-top: 50px;
             }
         
             .gamer {
@@ -547,7 +584,7 @@ footer{
             }
         
             .footer {
-                width: 100%;
+                width: 90%;
                 justify-content: center;
                 align-items: center;
                 text-align: center;
@@ -568,14 +605,9 @@ footer{
         
             .footer-icon {
                 margin-left: 140px;
+                margin-top: 30px; 
+                margin-bottom: 30px;
 
             }
-        
-            .footer-list-two {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                padding-left:140px;
-            }
-        
         }
 
